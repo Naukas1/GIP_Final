@@ -17,10 +17,19 @@ from django.conf.urls import include, url
 from Contactos import views as contactos_view
 from django.contrib import admin
 
-
+from .views import (
+    contactos_lista,
+    contactos_crear,
+    contactos_detalle,
+    contactos_update,
+    contactos_borrar,
+)
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^contactos/', include("Contactos.urls")),
+    url(r'^$', contactos_lista),
+    url(r'^crear/$', contactos_crear),
+    url(r'^detalle/$', contactos_detalle),
+    url(r'^update/$', contactos_update),
+    url(r'^borrar/$', contactos_borrar),
 
 ]

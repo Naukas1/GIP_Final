@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Templates</title>
+</head>
+<body>
+<h1>{{ title }} anda!</h1>
+
+{% for obj in object_list %}
+
+{{obj.Nombre}}<br/>
+{{obj.Apellido}}<br/>
+{{obj.Documento}}<br/>
+{{obj.Email}}<br/>
+{{obj.Telefono}}<br/>
+{{obj.FNacimiento}}<br/>
+{{obj.id}}<br/>
+
+
+{% endfor %}
+
+</body>
+</html>
