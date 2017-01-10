@@ -18,7 +18,7 @@ def contactos_lista(request): #trae todos los contactos y los muestra
 
 
 def contactos_detalle(request):
-    instancia = get_object_or_404(Contactos, id=1)
+    instancia = get_object_or_404(Contactos, id=2)
     context = {
         "instancia": instancia,
         "nombre": instancia.Nombre,
