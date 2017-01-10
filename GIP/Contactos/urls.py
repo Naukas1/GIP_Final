@@ -28,7 +28,7 @@ from .views import (
 urlpatterns = [
     url(r'^$', contactos_lista),
     url(r'^crear/$', contactos_crear),
-    url(r'^detalle/(?P<id>\d+)$', contactos_detalle),
+    url(r'^(?P<id>\d+)/$', contactos_detalle, name='detalle'),
     url(r'^update/$', contactos_update),
     url(r'^borrar/$', contactos_borrar),
 

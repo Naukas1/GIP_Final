@@ -8,11 +8,12 @@
 <h1>{{ title }} anda!</h1>
 
 {% for obj in object_list %}
+{% url "contactos:detalle" id=obj.id %}
 
 {{obj.Nombre}}<br/>
-{{obj.Apellido}}<br/>
+<a href='{{ obj.get_absolute_url }}'>{{obj.Apellido}}</a><br/>
 {{obj.Documento}}<br/>
-{{obj.Email}}<br/>
+{{obj.EMail}}<br/>
 {{obj.Telefono}}<br/>
 {{obj.FNacimiento}}<br/>
 {{obj.id}}<br/>
