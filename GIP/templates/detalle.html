@@ -1,19 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Detalle</title>
-</head>
-<body>
-<h1>{{nombre}}</h1>
+{% extends "base.html" %}
 
-{{instancia.Nombre}}<br/>
+{% block head_title %}{{ instance.title }} {{ block.super }} {% endblock head_title %}
+
+{% block content %}
+
+<style>
+    {% block style %}
+h1 {
+    color: #115220
+}
+    {% endblock style %}
+</style>
+
+    <h1>Detalle</h1>
+
+<h2>{{instancia.Nombre}}</h2>
 {{instancia.Apellido}}<br/>
 {{instancia.Documento}}<br/>
-{{instancia.Email}}<br/>
+{{instancia.EMail}}<br/>
 {{instancia.Telefono}}<br/>
 {{instancia.FNacimiento}}<br/>
 {{instancia.id}}<br/>
 
-</body>
-</html>
+{% endblock %}
+

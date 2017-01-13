@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Lista Contactos</h1>
+{% for obj in object_list %}
+<!--{% url "contactos:detalle" id=obj.id %}-->
+<a href='{{ obj.get_absolute_url }}'>{{obj.Nombre}}</a><br/>
+<a href='{{ obj.get_absolute_url }}'>{{obj.Apellido}}</a><br/>
+{{obj.Documento}}<br/>
+{{obj.EMail}}<br/>
+{{obj.Telefono}}<br/>
+{{obj.FNacimiento}}<br/>
+{{obj.id}}<br/>
+<br/>
+<br/>
+{% endfor %}
+
+{% endblock content %}
