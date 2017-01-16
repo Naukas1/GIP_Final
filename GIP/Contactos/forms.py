@@ -2,7 +2,7 @@ from django import forms
 from .models import Contactos
 
 class Contactos_Form(forms.ModelForm):
-    FNacimiento = forms.DateField(input_formats=['%d-%m-%Y']),
+    FNacimiento = forms.DateField(widget=forms.SelectDateWidget())
     class Meta:
         model = Contactos
         fields = [
@@ -10,5 +10,6 @@ class Contactos_Form(forms.ModelForm):
             "Apellido",
             "Documento",
             "Telefono",
+            "EMail",
             "FNacimiento",
         ]
