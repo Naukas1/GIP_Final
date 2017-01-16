@@ -53,7 +53,7 @@ def contactos_update(request, id=None):
         "instancia": instancia,
         }
 
-    return render(request, "contactos_form.html", context)
+    return render(request, "contactos_update_form.html", context)
 
 def contactos_borrar(request,  id=None):
     instancia = get_object_or_404(Contactos, id=id)
