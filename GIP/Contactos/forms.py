@@ -1,8 +1,18 @@
 from django import forms
 from .models import Contactos
+import datetime
 
 class Contactos_Form(forms.ModelForm):
-    FNacimiento = forms.DateField(widget=forms.SelectDateWidget())
+
+    lista = []  # Lista vacia a popular con los posibles años de la fecha de nacimiento
+    actual = datetime.datetime.now().year + 1  # Año actual para definir el final de la lista
+
+    for i in range(1900, actual):
+        lista.append(i)
+
+    FNacimiento = forms.DateField(widget=forms.SelectDateWidget(years=lista))
+    EMail = forms.EmailField(required=False)
+
     class Meta:
         model = Contactos
         fields = [
