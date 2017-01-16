@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80de2b71-d648-4c14-826f-5cfb78f412a3" name="Default" comment="Changed Contactos_Form:&#10;&#10;    Fixed FNacimiento widget to show proper years&#10;    Made EMail field not required">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/templates/contactos_update_form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GIP/db.sqlite3" afterPath="$PROJECT_DIR$/GIP/db.sqlite3" />
+    <list default="true" id="80de2b71-d648-4c14-826f-5cfb78f412a3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GIP/Contactos/views.py" afterPath="$PROJECT_DIR$/GIP/Contactos/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -488,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1484602723434</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Created contactos_update_form:&#10;&#10;    Separated creation and update forms&#10;    Suggestion: change contactos_update por contactos_modificar to keep consistency">
+      <created>1484603265139</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1484603265139</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -502,12 +506,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19240049" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3068309" sideWeight="0.5162847" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3068309" sideWeight="0.48371533" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3068309" sideWeight="0.48371533" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -531,7 +535,8 @@
     <MESSAGE value="Hasta video 24 Inclusive. &#10;+++ TODO ANDANDO +++" />
     <MESSAGE value="Hasta video 25 inclusive. &#10;+++ TODO ANDANDO +++" />
     <MESSAGE value="Changed Contactos_Form:&#10;&#10;    Fixed FNacimiento widget to show proper years&#10;    Made EMail field not required" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed Contactos_Form:&#10;&#10;    Fixed FNacimiento widget to show proper years&#10;    Made EMail field not required" />
+    <MESSAGE value="Created contactos_update_form:&#10;&#10;    Separated creation and update forms&#10;    Suggestion: change contactos_update por contactos_modificar to keep consistency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created contactos_update_form:&#10;&#10;    Separated creation and update forms&#10;    Suggestion: change contactos_update por contactos_modificar to keep consistency" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
