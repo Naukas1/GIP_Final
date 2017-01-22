@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80de2b71-d648-4c14-826f-5cfb78f412a3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GIP/db.sqlite3" afterPath="$PROJECT_DIR$/GIP/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/GIP_Final.iml" afterPath="$PROJECT_DIR$/.idea/GIP_Final.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/Profesionales/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/Profesionales/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/Profesionales/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/Profesionales/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/Profesionales/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/Profesionales/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/Profesionales/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/Profesionales/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GIP/Contactos/admin.py" afterPath="$PROJECT_DIR$/GIP/Contactos/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GIP/Contactos/forms.py" afterPath="$PROJECT_DIR$/GIP/Contactos/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GIP/Contactos/models.py" afterPath="$PROJECT_DIR$/GIP/Contactos/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GIP/GIP/settings.py" afterPath="$PROJECT_DIR$/GIP/GIP/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GIP/templates/base.html" afterPath="$PROJECT_DIR$/GIP/templates/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -559,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1484779615039</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="-Nueva App para Profesionales&#10;-Contactos: nuevo modelo para ObrasSociales&#10;                      nuevos campos en Contactos">
+      <created>1485062645374</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1485062645374</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -573,9 +580,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19179735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19179735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281075" sideWeight="0.50241256" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14333707" sideWeight="0.47949338" order="10" side_tool="false" content_ui="tabs" />
@@ -605,7 +612,8 @@
     <MESSAGE value="Changed Contactos_Form:&#10;&#10;    Fixed FNacimiento widget to show proper years&#10;    Made EMail field not required" />
     <MESSAGE value="Created contactos_update_form:&#10;&#10;    Separated creation and update forms&#10;    Suggestion: change contactos_update por contactos_modificar to keep consistency" />
     <MESSAGE value="Mid-Way #27.&#10;TODO ANDA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mid-Way #27.&#10;TODO ANDA" />
+    <MESSAGE value="-Nueva App para Profesionales&#10;-Contactos: nuevo modelo para ObrasSociales&#10;                      nuevos campos en Contactos" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Nueva App para Profesionales&#10;-Contactos: nuevo modelo para ObrasSociales&#10;                      nuevos campos en Contactos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
