@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from Contactos.models import Contactos
+from Contactos.models import Contactos, ObraSocial
 
 class ContactosAdmin(admin.ModelAdmin):
     list_display = ["__str__", "Documento"]
@@ -10,4 +10,6 @@ class ContactosAdmin(admin.ModelAdmin):
     class Meta:
         model = Contactos
 
+
 admin.site.register(Contactos, ContactosAdmin)
+admin.site.register(ObraSocial)

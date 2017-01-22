@@ -23,4 +23,6 @@ class Contactos_Form(forms.ModelForm):
             "Telefono",
             "EMail",
             "FNacimiento",
+            "ObraSocial",
+            "NroAfiliado",
         ]
