@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block head_title %}
+{{ instance.title }} {{ block.super }}
+{% endblock head_title %}
+
+{% block content %}
+
+<div class="col-sm-6 col-sm-offset-3">
+
+<h1>{{ instancia.Usuario.first_name }} </h1> <h3>{{instancia.Usuario.last_name}}</h3>
+
+Documento: {{instancia.Documento}}<br/>
+Email: {{instancia.EMail}}<br/>
+Telefono: {{instancia.Telefono}}<br/>
+Fecha Nacimiento: {{instancia.FNacimiento}}<br/>
+
+
+</div>
+{% endblock %}
+

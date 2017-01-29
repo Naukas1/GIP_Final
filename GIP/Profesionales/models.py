@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.urlresolvers import reverse
 
 # Create your models here.
 class Especialidades(models.Model):
@@ -30,4 +31,4 @@ class Profesionales(models.Model):
         return self.Usuario.first_name
 
     def get_absolute_url(self):
-        return reverse('contactos:detalle', kwargs={"id":self.id})
+        return reverse('profesionales:detalle', kwargs={"id":self.id})
