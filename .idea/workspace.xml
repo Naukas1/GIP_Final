@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80de2b71-d648-4c14-826f-5cfb78f412a3" name="Default" comment="Attempting to actually add the new App">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/Profesionales/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/Profesionales/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/templates/profesionales_detalle.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/templates/profesionales_editar_form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/templates/profesionales_lista.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GIP/db.sqlite3" afterPath="$PROJECT_DIR$/GIP/db.sqlite3" />
+    <list default="true" id="80de2b71-d648-4c14-826f-5cfb78f412a3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GIP/GIP/settings.py" afterPath="$PROJECT_DIR$/GIP/GIP/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GIP/GIP/urls.py" afterPath="$PROJECT_DIR$/GIP/GIP/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GIP/Profesionales/models.py" afterPath="$PROJECT_DIR$/GIP/Profesionales/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GIP/Profesionales/views.py" afterPath="$PROJECT_DIR$/GIP/Profesionales/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -299,6 +297,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="HistoriaClinica" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GIP_Final" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GIP_Final" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GIP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="GIP" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -565,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485062748523</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Advanced on Profesionales views and templates. It can now be properly updated from the template, still need to work on the django admin view">
+      <created>1485671032209</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1485671032209</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -613,7 +636,8 @@
     <MESSAGE value="Mid-Way #27.&#10;TODO ANDA" />
     <MESSAGE value="-Nueva App para Profesionales&#10;-Contactos: nuevo modelo para ObrasSociales&#10;                      nuevos campos en Contactos" />
     <MESSAGE value="Attempting to actually add the new App" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attempting to actually add the new App" />
+    <MESSAGE value="Advanced on Profesionales views and templates. It can now be properly updated from the template, still need to work on the django admin view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Advanced on Profesionales views and templates. It can now be properly updated from the template, still need to work on the django admin view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
