@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80de2b71-d648-4c14-826f-5cfb78f412a3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GIP/HistoriaClinica/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -588,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1485671032209</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Started HistoriaClinica app and created the basic model relationship.">
+      <created>1485671116731</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1485671116731</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -637,7 +636,8 @@
     <MESSAGE value="-Nueva App para Profesionales&#10;-Contactos: nuevo modelo para ObrasSociales&#10;                      nuevos campos en Contactos" />
     <MESSAGE value="Attempting to actually add the new App" />
     <MESSAGE value="Advanced on Profesionales views and templates. It can now be properly updated from the template, still need to work on the django admin view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Advanced on Profesionales views and templates. It can now be properly updated from the template, still need to work on the django admin view" />
+    <MESSAGE value="Started HistoriaClinica app and created the basic model relationship." />
+    <option name="LAST_COMMIT_MESSAGE" value="Started HistoriaClinica app and created the basic model relationship." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
