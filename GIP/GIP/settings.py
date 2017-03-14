@@ -40,7 +40,22 @@ INSTALLED_APPS = [
     'Contactos',
     'Profesionales',
     'HistoriaClinica',
+    'schedule',
+    'djangobower'
 ]
+
+
+# STATICFILES_FINDERS = [
+#     'djangobower.finders.BowerFinder'
+# ]
+
+# BOWER_COMPONENTS_ROOT = '/PROJECT_ROOT/components/'
+#
+# BOWER_INSTALLED_APPS = (
+#     'jquery',
+#     'jquery-ui',
+#     'bootstrap'
+# )
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -65,6 +80,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # 'django.core.context_processors.request'
             ],
         },
     },

@@ -17,6 +17,9 @@ class Especialidades(models.Model):
 
 class Profesionales(models.Model):
     Usuario = models.OneToOneField(User, on_delete=models.CASCADE)
+    Nombre = models.CharField(max_length=64, null=True)
+    Apellido = models.CharField(max_length=64, null=True)
+    Email = models.EmailField(null=True)
     Documento = models.IntegerField()
     Telefono = models.IntegerField()
     FNacimiento = models.DateField()
@@ -28,7 +31,7 @@ class Profesionales(models.Model):
         verbose_name_plural = "Profesionales"
 
     def __str__(self):
-        return self.Usuario.first_name
+        return str(self.Nombre)
 
     def get_absolute_url(self):
         return reverse('profesionales:detalle', kwargs={"id":self.id})

@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^contactos/', include("Contactos.urls", namespace="contactos")),
     url(r'^profesionales/', include("Profesionales.urls", namespace="profesionales")),
+    url(r'^schedule/', include("schedule.urls", namespace="schedule")),
 
 ]
 

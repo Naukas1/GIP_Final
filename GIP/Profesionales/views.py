@@ -24,7 +24,7 @@ def profesionales_detalle(request, id):
     instancia = get_object_or_404(Profesionales, id=id)
     context = {
         "instancia": instancia,
-        "nombre": instancia.Usuario.first_name,
+        "nombre": instancia.Nombre,
     }
     return render(request, "profesionales_detalle.html", context)
 #
@@ -47,22 +47,22 @@ def profesionales_editar(request, id=None):
 
     #Retrieve the instance of user associated with our profesional and call its form
 
-    instancia_usu = get_object_or_404(User,id=instancia_prof.Usuario.id) #This here proves I'm awesome
-    usuario_form = Usuario_Form(request.POST or None, instance=instancia_usu)
+    # instancia_usu = get_object_or_404(User,id=instancia_prof.Usuario.id) #This here proves I'm awesome
+    # usuario_form = Usuario_Form(request.POST or None, instance=instancia_usu)
 
     if profesionales_form.is_valid():
         instancia_prof = profesionales_form.save(commit=False)
         instancia_prof.save()
 
-        instancia_usu = usuario_form.save(commit=False)  #Further proof of my awesomeness
-        instancia_usu.save()
+        # instancia_usu = usuario_form.save(commit=False)  #Further proof of my awesomeness
+        # instancia_usu.save()
 
         messages.success(request, "Profesional Actualizado!")
 
         return HttpResponseRedirect(instancia_prof.get_absolute_url())
     context = {
         "profesionales_form": profesionales_form,
-        "usuario_form": usuario_form,
+        # "usuario_form": usuario_form,
         "instancia": instancia_prof,
         }
 
