@@ -34,8 +34,22 @@ class Contactos(models.Model):
     def __str__(self):
         return self.Nombre
 
-    def get_absolute_url(self):
+    def get_url_detalle(self):
         return reverse('contactos:detalle', kwargs={"id":self.id})
+
+    def get_url_lista(self):
+        return reverse('contactos:lista')
+
+    def get_url_edita(self):
+        return reverse('contactos:update', kwargs={"id":self.id})
+
+    def get_url_borrar(self):
+        return reverse('contactos:borrar', kwargs={"id":self.id})
+
+    def get_url_crear(self):
+        return reverse('contactos:crear')
+
+
 
 
 

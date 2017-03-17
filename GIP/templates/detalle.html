@@ -15,7 +15,11 @@
 {{instancia.Telefono}}<br/>
 {{instancia.FNacimiento}}<br/>
 
+     <a href="{{ instancia.get_url_edita }}" class="btn btn-primary" role="button">Modificar Contacto</a>
+
+     <a href="{{ instancia.get_url_borrar }}" class="btn btn-primary" role="button">Borrar Contacto</a>
+     <br><br>
+     <a href="{{ instancia.get_url_lista }}" class="btn btn-primary" role="button">Volver</a>
 
 </div>
 {% endblock %}
-

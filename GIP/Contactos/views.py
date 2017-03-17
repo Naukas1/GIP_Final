@@ -11,6 +11,7 @@ def contactos_lista(request): #trae todos los contactos y los muestra
         context = {
             "title": "Mi lista de usuarios",
             "object_list": queryset,
+
         }
     else:
         context = {
@@ -30,8 +31,8 @@ def contactos_detalle(request, id):
 def contactos_crear(request):
     form = Contactos_Form(request.POST or None)
     if form.is_valid():
-        instancia = form.save(commit=False)
-        instancia.save()
+        saves = form.save(commit=False)
+        saves.save()
         messages.success(request, "Creado Exitosamente!")
         return HttpResponseRedirect(instancia.get_absolute_url())
     context = {
@@ -39,7 +40,7 @@ def contactos_crear(request):
     }
     return render(request, "contactos_form.html", context)
 
-def contactos_update(request, id=None):
+def contactos_update(request, id):
     instancia = get_object_or_404(Contactos,id=id)
     form = Contactos_Form(request.POST or None, instance=instancia)
     if form.is_valid():
