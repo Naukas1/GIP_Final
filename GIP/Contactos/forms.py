@@ -1,5 +1,5 @@
 from django import forms
-from .models import Contactos
+from .models import Contactos, ObraSocial
 import datetime
 
 class Contactos_Form(forms.ModelForm):
@@ -25,4 +25,11 @@ class Contactos_Form(forms.ModelForm):
             "FNacimiento",
             "ObraSocial",
             "NroAfiliado",
+        ]
+
+class ObraSocial_Form(forms.ModelForm):
+    class Meta:
+        model = ObraSocial
+        fields = [
+            "Nombre",
         ]

@@ -23,6 +23,7 @@ from .views import (
     contactos_detalle,
     contactos_update,
     contactos_borrar,
+    obrasocial_crear,
 )
 
 urlpatterns = [
@@ -31,5 +32,7 @@ urlpatterns = [
     url(r'^(?P<id>\d+)/$', contactos_detalle, name='detalle'),
     url(r'^(?P<id>\d+)/update/$', contactos_update, name="update"),
     url(r'^(?P<id>\d+)/borrar/$', contactos_borrar, name="borrar"),
+    url(r'^obrasocial/crear/$', obrasocial_crear, name="os_crear"),
+
 
 ]

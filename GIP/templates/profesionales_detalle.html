@@ -16,6 +16,13 @@ Telefono: {{instancia.Telefono}}<br/>
 Fecha Nacimiento: {{instancia.FNacimiento}}<br/>
 
 
+     <a href="{{ instancia.get_url_edita }}" class="btn btn-primary" role="button">Modificar Profesional</a>
+
+     <a href="{{ instancia.get_url_borrar }}" class="btn btn-primary" role="button">Borrar Profesional</a>
+     <br><br>
+     <a href="/profesionales" class="btn btn-primary" role="button">Volver</a>
+
+
 </div>
 {% endblock %}
 

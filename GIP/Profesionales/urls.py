@@ -18,17 +18,18 @@ from django.conf.urls import include, url
 
 from .views import (
     profesionales_lista,
-    # profesionales_crear,
+    profesionales_crear,
     profesionales_detalle,
-    profesionales_editar,
-    # profesionales_borrar,
+    profesionales_edita,
+    profesionales_borrar,
+    especialidad_crear,
 )
 
 urlpatterns = [
     url(r'^$', profesionales_lista, name="lista"),
-    # url(r'^crear/$', contactos_crear),
+    url(r'^crear/$', profesionales_crear, name="crear"),
     url(r'^(?P<id>\d+)/$', profesionales_detalle, name='detalle'),
-    url(r'^(?P<id>\d+)/editar/$', profesionales_editar, name="editar"),
-    # url(r'^(?P<id>\d+)/borrar/$', contactos_borrar),
-
-]
+    url(r'^(?P<id>\d+)/update/$', profesionales_edita, name="update"),
+    url(r'^(?P<id>\d+)/borrar/$', profesionales_borrar, name="borrar"),
+    url(r'^especialidades/crear/$', especialidad_crear, name="esp_crear"),
+    ]

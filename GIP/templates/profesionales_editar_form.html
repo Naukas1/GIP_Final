@@ -1,13 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Editar profesional</h1>
+<h1>Modificar Profesional</h1>
 {{ block.super }}
 <form method='POST' action=''> {% csrf_token %}
-<!--{{ usuario_form.as_p }}-->
-{{ profesionales_form.as_p }}
-
+{{ form.as_p }}
 <input type='submit' value='Modificar'>
+    <a href="{{ instancia.get_url_detalle }}" class="btn btn-primary" role="button">Volver</a>
 </form>
-
 {% endblock content %}

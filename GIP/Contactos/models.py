@@ -14,8 +14,8 @@ class ObraSocial(models.Model):
     def __str__(self):
         return self.Nombre
 
-    #TODO: Analyze and add fields as needed. I'm guessing legal stuff like Persona Juridica
-    #TODO: Create view and add get_absolute_url function
+    # TODO: Analyze and add fields as needed. I'm guessing legal stuff like Persona Juridica
+    # TODO: Create view and add get_absolute_url function
 
 class Contactos(models.Model):
     Nombre = models.CharField(max_length=120)

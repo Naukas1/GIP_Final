@@ -4,7 +4,7 @@ from django.core.urlresolvers import reverse
 
 # Create your models here.
 class Especialidades(models.Model):
-    """ Informacion de las obras sociales"""
+    """ Informacion de las obras sociales """
 
     Nombre = models.CharField(max_length=64)
 
@@ -15,11 +15,17 @@ class Especialidades(models.Model):
     def __str__(self):
         return self.Nombre
 
+    def get_url_esp_crear(self):
+        return reverse('especialidad:crear')
+
+    def get_url_lista(self):
+        return reverse('especialidad:contactos')
+
 class Profesionales(models.Model):
     Usuario = models.OneToOneField(User, on_delete=models.CASCADE)
-    Nombre = models.CharField(max_length=64, null=True)
-    Apellido = models.CharField(max_length=64, null=True)
-    Email = models.EmailField(null=True)
+    Nombre = models.CharField(max_length=64)
+    Apellido = models.CharField(max_length=64)
+    EMail = models.EmailField()
     Documento = models.IntegerField()
     Telefono = models.IntegerField()
     FNacimiento = models.DateField()
@@ -33,5 +39,19 @@ class Profesionales(models.Model):
     def __str__(self):
         return str(self.Nombre)
 
-    def get_absolute_url(self):
+    def get_url_detalle(self):
         return reverse('profesionales:detalle', kwargs={"id":self.id})
+
+    def get_url_lista(self):
+        return reverse('profesionales:lista')
+
+    def get_url_edita(self):
+        return reverse('profesionales:update', kwargs={"id":self.id})
+
+    def get_url_borrar(self):
+        return reverse('profesionales:borrar', kwargs={"id":self.id})
+
+    def get_url_crear(self):
+        return reverse('profesionales:crear')
+
+

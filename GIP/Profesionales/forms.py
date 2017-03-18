@@ -1,5 +1,5 @@
 from django import forms
-from .models import Profesionales
+from .models import Profesionales, Especialidades
 from django.contrib.auth.models import User
 import datetime
 
@@ -26,13 +26,24 @@ class Profesionales_Form(forms.ModelForm):
 
     FNacimiento = forms.DateField(widget=forms.SelectDateWidget(years=lista))
 
-
     class Meta:
         model = Profesionales
         fields = [
+            "Usuario",
+            "Nombre",
+            "Apellido",
+            "EMail",
             "Matricula",
             "Documento",
             "Telefono",
             "FNacimiento",
             "Especialidad",
+        ]
+
+class Especialidades_Form(forms.ModelForm):
+
+    class Meta:
+        model = Especialidades
+        fields = [
+            "Nombre",
         ]

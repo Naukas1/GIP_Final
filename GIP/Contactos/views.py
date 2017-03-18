@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Contactos
-from .forms import Contactos_Form
+from .models import Contactos, ObraSocial
+from .forms import Contactos_Form, ObraSocial_Form
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 # Create your views here.
@@ -11,7 +11,6 @@ def contactos_lista(request): #trae todos los contactos y los muestra
         context = {
             "title": "Mi lista de usuarios",
             "object_list": queryset,
-
         }
     else:
         context = {
@@ -28,13 +27,14 @@ def contactos_detalle(request, id):
     }
     return render(request, "detalle.html", context)
 
+
 def contactos_crear(request):
     form = Contactos_Form(request.POST or None)
     if form.is_valid():
         saves = form.save(commit=False)
         saves.save()
         messages.success(request, "Creado Exitosamente!")
-        return HttpResponseRedirect(instancia.get_absolute_url())
+        return HttpResponseRedirect(instancia.get_url_lista())
     context = {
         "form": form,
     }
@@ -62,3 +62,15 @@ def contactos_borrar(request,  id=None):
     messages.success(request, "Contacto Borrado!")
 
     return redirect("contactos:lista")
+
+def obrasocial_crear(request):
+    form = ObraSocial_Form(request.POST or None)
+    if form.is_valid():
+        instancia = form.save(commit=False)
+        instancia.save()
+        messages.success(request, "Creado Exitosamente!")
+        return HttpResponseRedirect("/contactos")
+    context = {
+        "form": form,
+    }
+    return render(request, "obrasocial_form.html", context)
