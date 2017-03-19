@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Lista Historia Clinicas</h1>
+<div class="row">
+{% for obj in object_list %}
+  <div class="col-sm-6">
+    <div class="thumbnail">
+      <div class="caption">
+        <h3><a href='{{ obj.get_url_detalle }}'>{{obj.Nombre}} {{obj.Paciente}}</a></h3>
+        <p>
+          Profesional: {{obj.Profesional}}<br/>
+          Antecedentes: {{obj.Antecedentes}}<br/>
+          Diagnostico: {{obj.Diagnostico}}<br/>
+          Alergias: {{obj.Alergias}}<br/
+        </p>
+        <p>
+            <a href="{{ obj.get_url_detalle }}" class="btn btn-primary" role="button">Ver Historia Clinica</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+    {% cycle "" "</div><div class='row'>"%}
+{% endfor %}
+</div>
+<a href="/historiaclinica/crear/" class="btn btn-primary" role="button">Crear Historia Clinica</a>
+<a href="/contactos" class="btn btn-primary" role="button">Ver Contactos</a>
+<a href="/profesionales" class="btn btn-primary" role="button">Ver Profesionales</a>
+
+{% endblock content %}

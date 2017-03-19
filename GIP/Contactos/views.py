@@ -34,7 +34,7 @@ def contactos_crear(request):
         saves = form.save(commit=False)
         saves.save()
         messages.success(request, "Creado Exitosamente!")
-        return HttpResponseRedirect(instancia.get_url_lista())
+        return HttpResponseRedirect("/contactos/")
     context = {
         "form": form,
     }
@@ -48,7 +48,7 @@ def contactos_update(request, id):
         instancia.save()
         messages.success(request, "Contacto Actualizado!")
 
-        return HttpResponseRedirect(instancia.get_absolute_url())
+        return HttpResponseRedirect(instancia.get_url_lista())
     context = {
         "form": form,
         "instancia": instancia,

@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('Profesionales', '0001_initial'),
-        ('Contactos', '0004_auto_20170122_0159'),
+        #('Contactos', '0004_auto_20170122_0159'),
     ]
 
     operations = [

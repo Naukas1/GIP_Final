@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block head_title %}
+{{ instance.title }} {{ block.super }}
+{% endblock head_title %}
+
+{% block content %}
+
+<div>
+
+<h1>{{ instancia.Nombre }} </h1> <h3>{{instancia.Apellido}}</h3>
+
+Profesional: {{instancia.Profesional}}<br/>
+Antecedentes: {{instancia.Antecedentes}}<br/>
+Diagnostico: {{instancia.Diagnostico}}<br/>
+Alergias: {{instancia.Alergias}}<br/>
+
+
+</div>
+
+
+<div>
+
+    <div class="thumbnail">
+      <div class="table">
+        <table xml:space="15">
+          <tr>
+               <th>Descripcion:</th>
+               <th>Fecha:</th>
+               <th>Tratamiento:</th>
+          </tr>
+             {% for obj in object_list %}
+             <tr>
+               <td width="300px">{{obj.Descripcion}}</td>
+               <td width="300px">{{obj.FechaConsulta}}</td>
+               <td width="300px">{{obj.Tratamiento}}</td>
+             </tr>
+             {% endfor %}
+        </table>
+      </div>
+    </div>
+
+
+    {% cycle "" "</div><div class='row'>"%}
+</div>
+<div>
+<form method='POST' action=''> {% csrf_token %}
+{{ form.as_p }}
+
+<input type='submit' class='btn btn-default' value='Crear Nueva Linea'>
+    <br><br>
+</form>
+</div>
+<div>
+     <a href="{{ instancia.get_url_edita }}" class="btn btn-primary" role="button">Modificar Historia Clinica</a>
+
+     <a href="{{ instancia.get_url_borrar }}" class="btn btn-primary" role="button">Borrar Historia Clinica</a>
+     <br><br>
+     <a href="/historiaclinica" class="btn btn-primary" role="button">Volver</a>
+</div>
+
+{% endblock %}

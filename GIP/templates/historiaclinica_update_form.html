@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Modificar Historia Clinica</h1>
+{{ block.super }}
+<form method='POST' action=''> {% csrf_token %}
+{{ form.as_p }}
+<input type='submit' value='Modificar'>
+    <a href="{{ instancia.get_url_detalle }}" class="btn btn-primary" role="button">Volver</a>
+</form>
+{% endblock content %}

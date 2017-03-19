@@ -39,9 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Contactos',
     'Profesionales',
-    # 'HistoriaClinica',
+    'HistoriaClinica',
     'schedule',
     'djangobower'
+
 ]
 
 

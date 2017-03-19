@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.urlresolvers import reverse
 import Contactos
 import Profesionales
 
@@ -14,6 +15,7 @@ class HistoriaClinica(models.Model):
     # TODO: evaluar y agregar campos a esta Historia Clinica generica *Nota: Pediatria va a ser otra app que extienda este modelo, do not add specifics here
     Antecedentes = models.TextField(null=True)
     Alergias = models.TextField(null=True)
+    Diagnostico = models.TextField(null=True)
 
     class Meta:
         verbose_name = "Historia Clinica"
@@ -22,6 +24,21 @@ class HistoriaClinica(models.Model):
     # TODO: Definir una mejor forma de identificar una historia clinica en la lista
     def __str__(self):
         return str(self.Nombre)
+
+    def get_url_lista(self):
+        return reverse('historiaclinica:lista')
+
+    def get_url_detalle(self):
+        return reverse('historiaclinica:detalle', kwargs={"id":self.id})
+
+    def get_url_edita(self):
+        return reverse('historiaclinica:update', kwargs={"id":self.id})
+
+    def get_url_borrar(self):
+        return reverse('historiaclinica:borrar', kwargs={"id":self.id})
+
+    def get_url_crear(self):
+        return reverse('historiaclinica:crear')
 
     # def get_absolute_url(self):
     #     return reverse('profesionales:detalle', kwargs={"id":self.id})
